@@ -1,14 +1,72 @@
+.podButton {
+  border: 2px solid #2E3532;
+  border-radius: 15px;
+  padding: 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 20px;
+  transition-duration: .4s;
+  cursor: pointer;
+  background-color: #AFD2E9; 
+  color: #000000; 
+}
+
+.podButton:hover {
+  background-color: #048A81;
+  color: white;
+}
+
+.pastButton {
+  border: 2px solid #2E3532;
+  border-radius: 15px;
+  padding: 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 20px;
+  transition-duration: .4s;
+  cursor: pointer;
+  background-color: #AFD2E9; 
+  color: #000000; 
+}
+
+.pastButton:hover {
+  background-color: #048A81;
+  color: white;
+}
+
+.centerDiv {
+  display: flex;
+  justify-content: center;
+}
+
 .imgDiv {
   margin: auto;
+}
+
+.mouseoverTxt {
+  text-align: center;
+  font-size: 12px;
 }
 
 .imgSmall {
   display: block;
   margin: 50px auto;
   width: 300px;
+  border-style: outset;
+  border-width: 5px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .imgFull {
   display: block;
   margin: 50px auto;
+  border-style: outset;
+  border-width: 5px;
+  border-radius: 5px;
+  cursor: pointer;
 }
