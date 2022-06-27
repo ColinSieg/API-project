@@ -1,13 +1,31 @@
 // NASA API key = HuEXLBHbanki6UBwsARsbTaUZZBa8Qm1IdIg0dRn
 
-const button = document.querySelector('.pod')
-const imageDiv = document.querySelector('div')
+const podButton = document.querySelector('.podButton')
+const randButton = document.querySelector('.randButton')
+const imgDiv = document.querySelector('.imgDiv')
 
-button.addEventListener('click', async () => {
+podButton.addEventListener('click', async () => {
   let response = await axios.get(
     `https://api.nasa.gov/planetary/apod?api_key=HuEXLBHbanki6UBwsARsbTaUZZBa8Qm1IdIg0dRn`
   )
-  console.log(response)
   let pic = response.data.url
-  imageDiv.innerHTML = `<img src=${pic}>`
+  imgDiv.innerHTML = `<img class="imgSmall" src=${pic}>`
 })
+
+imgDiv.addEventListener('mouseenter', async () => {
+  let response = await axios.get(
+    `https://api.nasa.gov/planetary/apod?api_key=HuEXLBHbanki6UBwsARsbTaUZZBa8Qm1IdIg0dRn`
+  )
+  let pic = response.data.url
+  imgDiv.innerHTML = `<img class="imgFull" src=${pic}>`
+})
+
+imgDiv.addEventListener('mouseleave', async () => {
+  let response = await axios.get(
+    `https://api.nasa.gov/planetary/apod?api_key=HuEXLBHbanki6UBwsARsbTaUZZBa8Qm1IdIg0dRn`
+  )
+  let pic = response.data.url
+  imgDiv.innerHTML = `<img class="imgSmall" src=${pic}>`
+})
+
+// randButton.addEventListener('click', async () => {})
