@@ -11,5 +11,4 @@ podButton.addEventListener('click', async () => {
   let pic = response.data.url
   let explain = response.data.explanation
   imgDiv.innerHTML = `<figure><img class="imgFull" src=${pic}><figcaption>${explain}</figcaption></figure>`
-  console.log(response.data)
 })
