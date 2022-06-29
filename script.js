@@ -1,7 +1,6 @@
 // NASA API key = HuEXLBHbanki6UBwsARsbTaUZZBa8Qm1IdIg0dRn
 
 const podButton = document.querySelector('.podButton')
-const learnMore = document.querySelector('.learnMore')
 const mediaDiv = document.querySelector('.mediaDiv')
 
 podButton.addEventListener('click', async () => {

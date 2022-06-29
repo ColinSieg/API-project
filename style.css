@@ -14,12 +14,12 @@
   margin: 20px;
   transition-duration: .4s;
   cursor: pointer;
-  background-color: #AFD2E9; 
+  background-color: #02bfe7; 
   color: #000000; 
 }
 
 .button:hover {
-  background-color: #048A81;
+  background-color: #dd361c;
   color: white;
 }
 
