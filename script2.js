@@ -13,8 +13,8 @@ dateButton.addEventListener('click', async () => {
   let explain = response.data.explanation
   let type = response.data.media_type
   if (type === 'video') {
-    mediaDiv.innerHTML = `<figure><h1 class="nasa txtCenter">${title}</h1><iframe width="840px" height="630" class="media" src=${media}></iframe><figcaption>${explain}</figcaption></figure>`
+    mediaDiv.innerHTML = `<figure><h1 class="nasa txtCenter">${title}</h1><figcaption>${explain}</figcaption><iframe width="840px" height="630" class="media" src=${media}></iframe></figure>`
   } else if (type === 'image') {
-    mediaDiv.innerHTML = `<figure><h1 class="nasa txtCenter">${title}</h1><img class="media" src=${media}><figcaption>${explain}</figcaption></figure>`
+    mediaDiv.innerHTML = `<figure><h1 class="nasa txtCenter">${title}</h1><figcaption>${explain}</figcaption><img class="media" src=${media}></figure>`
   }
 })
