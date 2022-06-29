@@ -23,6 +23,15 @@
   justify-content: center;
 }
 
-.imgDiv {
+.mediaDiv {
   margin: auto;
+}
+
+.media {
+  display: block;
+  margin: auto;
+}
+
+.txtCenter {
+  text-align: center;
 }
