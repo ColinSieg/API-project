@@ -23,9 +23,10 @@
   color: white;
 }
 
-.centerDiv {
+.centerFlex {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .nasa {
@@ -43,4 +44,25 @@
 
 .txtCenter {
   text-align: center;
+}
+
+.resultButton {
+  height: 50px;
+  width: 200px;
+  margin: 10px;
+  font-size: 16px;
+  text-align: center;
+  border: 2px solid #2E3532;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 20px;
+  transition-duration: .4s;
+  cursor: pointer;
+  background-color: #02bfe7; 
+  color: #000000; 
+}
+
+.resultButton:hover {
+  background-color: #dd361c;
+  color: white;
 }
