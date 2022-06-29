@@ -3,6 +3,11 @@
   src: url(nasalization-rg.otf);
 }
 
+h1 {
+  font-family: nasa;
+  font-size: 40px;
+}
+
 .button {
   border: 2px solid #2E3532;
   border-radius: 15px;
@@ -29,21 +34,28 @@
   align-items: center;
 }
 
-.nasa {
-  font-family: nasa;
+.media {
+  display: block;
+  margin: 20px auto;
+  border-style: outset;
+  border-width: 10px;
 }
 
 .mediaDiv {
   margin: auto;
 }
 
-.media {
-  display: block;
-  margin: auto;
+.nasa {
+  font-family: nasa;
 }
 
-.txtCenter {
-  text-align: center;
+.txtArea {
+  border: #000000;
+  border-style: solid;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #f1f1f1;
 }
 
 .resultButton {
@@ -65,4 +77,8 @@
 .resultButton:hover {
   background-color: #dd361c;
   color: white;
+}
+
+.txtCenter {
+  text-align: center;
 }
