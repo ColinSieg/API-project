@@ -10,4 +10,3 @@ const year = randDate.getFullYear()
 const month = ('0' + (randDate.getMonth() + 1)).slice(-2)
 const day = ('0' + randDate.getDate()).slice(-2)
 const fullDate = year + '-' + month + '-' + day
-console.log(fullDate)
