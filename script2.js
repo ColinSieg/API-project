@@ -24,7 +24,6 @@ dateButton.addEventListener('click', async () => {
   } else if (type === 'image') {
     mediaDiv.innerHTML = `<figure><h1 class="nasa txtCenter">${title}</h1><figcaption class="txtArea">${explain}</figcaption><img class="media" src=${media}></figure>`
   }
-  console.log(response)
 })
 
 randButton.addEventListener('click', async () => {
@@ -40,9 +39,10 @@ randButton.addEventListener('click', async () => {
   let media = response.data.url
   let explain = response.data.explanation
   let type = response.data.media_type
+  let displayDate = new Date(fullDate).toDateString()
   if (type === 'video') {
-    mediaDiv.innerHTML = `<figure><h1 class="nasa txtCenter">${title}</h1><figcaption class="txtArea">${explain}</figcaption><iframe width="840px" height="630" class="media" src=${media}></iframe></figure>`
+    mediaDiv.innerHTML = `<figure><h1 class="nasa txtCenter">${title}</h1><h2 class="nasa txtCenter">${displayDate}</h2><figcaption class="txtArea">${explain}</figcaption><iframe width="840px" height="630" class="media" src=${media}></iframe></figure>`
   } else if (type === 'image') {
-    mediaDiv.innerHTML = `<figure><h1 class="nasa txtCenter">${title}</h1><figcaption class="txtArea">${explain}</figcaption><img class="media" src=${media}></figure>`
+    mediaDiv.innerHTML = `<figure><h1 class="nasa txtCenter">${title}</h1><h2 class="nasa txtCenter">${displayDate}</h2><figcaption class="txtArea">${explain}</figcaption><img class="media" src=${media}></figure>`
   }
 })
